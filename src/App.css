@@ -1,38 +1,75 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+* { font-family: 'Tajawal', sans-serif; }
+
+
+:root {
+  --color-white: rgba(255, 255, 255, 0.8);
+  --color-gold: rgba(220, 183, 62, 0.8);
+  --color-grey-dark: rgba(0, 0, 0, 0.8);
+  --opacity: 0.88;
+}
+
+
+body {
+  background-image: url("/public/images/bgImageCounter.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;  
+}
+
+section, footer {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  padding: 10px;
+  border-radius: 13px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--color-white);
+  opacity: var(--opacity);
+  color: var(--color-grey-dark);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+h1 {
+  font-size: calc(15.5em + 10vw);
+  font-weight: 200;
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+  text-shadow: 0px 4px 7px var(--color-grey-dark);
 }
 
-.App-link {
-  color: #61dafb;
+a:link,
+a:visited {
+  font-size: 1.2rem;
+  color: var(--color-grey-dark);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  font-size: 30px;
+  font-weight: 300;
+  color: rgba(2, 0, 0, 0.8);
+  background-color: var(--color-white);
+  opacity: var(--opacity);
+  border: 2px solid var(--color-gold);
+  margin: 7px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 4px var(--color-grey-dark);
+}
+
+.main-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
