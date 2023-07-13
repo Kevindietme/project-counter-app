@@ -1,6 +1,6 @@
 export default function Footer() {
 
-  const githubURL = "(https://jsohndata.github.io/cozy-counter/";
+  const githubURL = "https://github.com/Kevindietme/project-counter-app";
 
   return (
     <footer>
